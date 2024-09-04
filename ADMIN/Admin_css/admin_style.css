@@ -1,0 +1,136 @@
+/*
+Author: Suh junior suh
+version: 1.0
+Theme: tasty treasure school project
+*/
+:root {
+    --primary-color: #FFDD00;
+    --secondary-color: #8B4513;
+    --text-color: #333;
+    --white: #FFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.table-full{
+    width: 100%;
+}
+.table-30{
+    width: 30%;
+}
+table tr th{
+    border-bottom: 1px solid black;
+    padding:1%;
+    text-align: left;
+}
+table tr td{
+    padding: 1%;
+}
+
+.btn-primary{
+    background-color: #1e90ff;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-primary:hover{
+    background-color: #3742fa;
+}
+
+.btn-secondary{
+    background-color: #7bed9f;
+    padding: 1%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-secondary:hover{
+    background-color: #2ed573;
+}
+
+.btn-danger{
+    background-color: #ff6b81;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-danger:hover{
+    background-color: #ff4757;
+}
+.success{
+    color: #2ed573;
+}
+.failed{
+    color: #ff4757;
+}
+
+
+/*CSS for the Menu*/
+.menu{
+    border-bottom: 1px solid black;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 3;
+}
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFDD00;
+}
+.menu ul li a:hover{
+    color: #8B4513;
+}
+
+/*CSS for the main-content*/
+.main-content{
+    margin: 1% 0;
+    background-color: #f1f2f6;
+    padding: 3% 0;
+}
+.col-4{
+    width: 18%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+}
+/*CSS for the footer*/
+.footer{
+    background-color: #FFDD00;
+    color:#8B4513 ;
+}
+/*CSS for login*/
+.login{
+    width: 30%;
+    border: 1px solid grey;
+    margin: 10% auto;
+    padding: 2%;
+}
