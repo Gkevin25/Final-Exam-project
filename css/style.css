@@ -81,7 +81,9 @@ body {
     font-weight: bold;
 }
 .menu-hero{
-    padding-top: 50px;
+    padding-top: 100px;
+    text-align: center;
+    color:  #8B4513;
 }
 .cta-button {
     background-color: var(--secondary-color);
