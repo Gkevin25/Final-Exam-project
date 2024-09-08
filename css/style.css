@@ -80,6 +80,9 @@ body {
     color: white;
     font-weight: bold;
 }
+.menu-hero{
+    padding-top: 50px;
+}
 .cta-button {
     background-color: var(--secondary-color);
     color: var(--white);
