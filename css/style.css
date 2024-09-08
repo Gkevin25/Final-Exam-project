@@ -122,6 +122,17 @@ body {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
+li{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+}
+.category img{
+    padding: 5px;
+    height: 300px;
+    object-fit: cover;
+    
+}
 
 #featured-items, #promo {
     padding: 4rem 2rem;
