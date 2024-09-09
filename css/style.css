@@ -91,6 +91,7 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     text-decoration: none;
+    
 }
 .container {
     position: relative;
@@ -196,6 +197,11 @@ footer {
     padding: 4rem 2rem;
     text-align: center;
 }
+#menu-categories h2{
+    font: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #8B4513;
+}
 
 .category-grid {
     display: grid;
@@ -211,6 +217,11 @@ footer {
 
 #special-offers {
     background-color: var(--primary-color);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+    padding-bottom: 19px;
+    padding-top: 5px;
 }
 
 footer {
@@ -257,4 +268,5 @@ footer {
     .search-bar input[type=text] {
       border: 1px solid #ccc;
     }
-  }
+    
+}   
