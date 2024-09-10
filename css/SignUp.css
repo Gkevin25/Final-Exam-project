@@ -11,6 +11,10 @@
 	margin: 0;
 	padding: 0;
 }
+:root{
+	--primary-color:#8B4513;
+    --secondary-color:#FFDD00;
+}
 .lbody{
 	font-family: 'Roboto', sans-serif;
 	background-image:url('./pics/hamburger.jpg');
@@ -35,7 +39,7 @@ img{
 	width: 400px;
 	height: 720px;
 	margin-left: 0px;
-	background-color: #8B4513;
+	background-color: var(--primary-color);
 	border-radius: 3px;
 	box-shadow: 22px 22px 44px #8B4513
 }
@@ -44,7 +48,7 @@ img{
 	height: 730px;
 	margin-left: 0px;
 	border-radius: 3px;
-	background-color: #8B4513;
+	background-color: var(--primary-color);
 	background-attachment: fixed;
 	box-shadow: 22px 22px 44px #8B4513;
 }
@@ -84,7 +88,7 @@ form input{
 	width: 100%;
 	padding: 6px;
 	border: none;
-	border: 3px solid #FFDD00;
+	border: 3px solid var(--secondary-color);
 	border-radius: 6px;
 	outline: none;
 }
@@ -93,8 +97,8 @@ input[type="button"]{
 	height: 40px;
 	margin-top: 25px;
 	border: none;
-	background-color: #FFDD00;
-	color: #8B4513;
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
 	font-size: 19px;
 	cursor: pointer;
 }
@@ -105,7 +109,7 @@ P{
 .para-2{
 	text-align: center;
 	font-family: 'Roboto' sans-serif;
-	color: #8B413;
+	color: var(--primary-color);
 	font-size: 17px;
 	margin-top:-8px ;
 }
