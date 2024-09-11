@@ -1,0 +1,109 @@
+/* Sitemap Styles */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 24px;
+    color: white;
+}
+
+.header-right {
+    display: flex;
+    gap: 20px;
+}
+
+.header-right a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.header-right .cta-button {
+    background-color: #ff6f61;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.header-right a:hover,
+.cta-button:hover {
+    background-color: #ff8a75;
+}
+
+/* Sitemap Hero Section */
+.sitemap-hero {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.sitemap-hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.sitemap-hero p {
+    font-size: 18px;
+}
+
+/* Sitemap Section */
+.sitemap-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.sitemap-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.sitemap-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sitemap-list li {
+    margin: 15px 0;
+}
+
+.sitemap-list a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ff6f61;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.sitemap-list a:hover {
+    color: #333;
+    border-bottom: 2px solid #ff6f61;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
