@@ -3,27 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Place Your Order - Tasty Treasure</title>
-    <link rel="stylesheet" href="order.css">
+    <link rel="shortcut icon" href="pics/i.png" type="image/png">
+    <title>Tasty Treasure - It's finger lickin' good</title>
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+    <!--js link-->
+    <script type="text/javascript" src="js/responsive.js"></script>
+    <script type="text/javascript" src="js/Order.js"></script>
     <header>
-        <nav>
+        <div class="nav">
             <div class="logo">
-                <a href="index.html"><img src="i.png" alt="Tasty Treasure Logo"></a>
+                <a href="Home.html"><img src="pics/i.png" alt="Tasty Treasure Logo" width="70" height="70"></a>
+                <h2 class="logo">Tasty Treasure</h2>
             </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+            <div class="search">
+                <input class="search-bar" type="text" placeholder="Search here...">
+            </div>
+            <div class="header-right"> 
+               <a  href="Home.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a  class="active" href="order.html" class="cta-button">Order Now</a>
+
+            </div>
+            <button class="hamburger" aria-label="Toggle menu">☰</button>
+           
+           
+        </div>
+        
+        <section id="drop-menu">
+            <ul class="nav-menu">
+                <li><a href="Home.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#" class="active">Order</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="order.html" >Order Now</a></li>
             </ul>
-        </nav>
+
+        </section>
+        
+
     </header>
-    main>
+    <main>
         <section class="order-hero">
-                 <h1>Place Your Order</h1>
+            <p> Proceed</p>
+            <h1>Place Your Order</h1>
             <p>Indulge in our finger lickin' good treasures.</p>
         </section>
       <section id="order-form">
@@ -49,54 +76,25 @@
                     <label for="order-items">Menu Items:</label>
                     <select id="order-items" name="order-items" multiple required>
                         <option value="golden-bucket">Golden Bucket</option>
-                        <img src="pics/4.jpg" alt="Featured Item 1"width="300" height="450">
                         <option value="family-treasure">Family Treasure Chest</option>
-                        <img src="pics/5.jpg" alt="Featured Item 2"width="300" height="450">
                         <option value="diamond-duo">Diamond Duo Bucket</option>
-                        <img src="pics/6.jpg" alt="Featured Item 3"width="300" height="450">
                         <option value="classic-sandwich">Classic Treasure Sandwich</option>
-                        <img src="pics/3.jpg" alt="Featured Item 5"width="300" height="450">
                         <option value="spicy-deluxe">Spicy Diamond Deluxe</option>
-                        <img src="pics/Spicy-chicken-sandwich.jpg" alt="Featured Item 6"width="300" height="450">
                         <option value="veggie-gem">Veggie Gem Burger</option>
-                        <img src="pics/hamburger.jpg" alt="Featured Item 7"width="300" height="450">
                         <option value="treasure-fries">Treasure Fries</option>
-                        <img src="pics/fries1.jpg" alt="Featured Item 8"width="300" height="450">
                         <option value="golden-corn">Golden Corn</option>
-                        <img src="pics/sweet-corn-500x500.jpeg" alt="Featured Item 9"width="300" height="450">
                         <option value="jewel-slaw">Jewel Slaw</option>
-                        <img src="pics/Ruby-Jewel-Slaw-scaled.jpg" alt="Featured Item 10"width="300" height="450">
                              </select>
                     <form id="payment-form">
-                         </section>
-      <section id="cart-summary"> 
-      <h2>Cart Summary</h2> 
-      <ul id="cart-items"> <!-- Cart items will be displayed here --> 
-      </ul> 
-      <p>Subtotal: $<span id="subtotal"></span></p> 
-      <p>Tax (10%): $<span id="tax"></span></p> 
-      <p>Total: $<span id="total"></span></p> 
-     </section> <!-- Payment Options Section --> 
-     <section id="payment-options"> 
-      <h2>Payment Options</h2> 
-      <ul> 
-       <li> <input type="radio" id="credit-card" name="payment-option"> Credit Card 
-        <div id="credit-card-info" style="display: none;"> <label for="card-number">Card Number:</label> 
-         <input type="text" id="card-number" name="card-number"> <label for="expiration-date">Expiration Date:</label> 
-         <input type="text" id="expiration-date" name="expiration-date"> <label for="cvv">CVV:</label> 
-         <input type="text" id="cvv" name="cvv"> 
-        </div> </li> 
-       <li> <input type="radio" id="paypal" name="payment-option"> PayPal </li> <!-- Add more payment options here --> 
-      </ul> 
-     </section> <!-- Order Submission Section --> 
-     <section id="order-submission"> <button id="submit-order">Place Order</button> 
-     </section> 
-    </div> 
-   </form> 
-   <div class="form-group"> <label for="special-instructions">Special Instructions:</label> <textarea id="special-instructions" name="special-instructions"></textarea> 
-   </div> <button type="submit" class="cta-button">Place Order</button> 
-  </section> 
-    
+    <label for="card-number">Card Number:</label>
+    <input type="text" id="card-number" name="card-number">
+
+    <label for="expiration-date">Expiration Date:</label>
+    <input type="text" id="expiration-date" name="expiration-date">
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv">
+
     <button type="submit">Pay Now</button>
 </form>
     <meta charset="UTF-8">
@@ -114,6 +112,7 @@
 
     <footer>
         <p>&copy; 2024 Tasty Treasure. All rights reserved.</p>
-            </footer>
+        <p><a href="sitemap.html">Sitemap</a></p>
+    </footer>
 </body>
 </html>
