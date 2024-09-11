@@ -5,47 +5,86 @@
 <div class="wrapper">
     <h1>MANAGE FOOD</h1>
     <br>
-
+    <?php 
+     if(isset($_SESSION['food-added'])){
+        echo $_SESSION['food-added'];
+        unset($_SESSION['food-added']);
+     }
+     ?>
+     <br>
+     <br>
 <!--Button to create a new admin-->
-<a class="btn-primary" href="">Add Food</a>
-     <br>
-     <br>
+<a class="btn-primary" href="<?php echo SITEURL;?>ADMIN/add-food.php">Add Food</a>
+     <br><br>
+     
 <div class="clearfix"></div>
 
     <table class="table-full">
         <tr>
             <th>S.N</th>
-            <th>Full name</th>
-            <th>Username</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>Featured</th>
+            <th>Active</th>
             <th>Actions</th>
         </tr>
-        <tr>
-            <td>1. </td>
-            <td>SUH JUNIOR</td>
-            <td>SJ</td>
-            <td>
-                <a class="btn-secondary" href="">Update Admin</a> 
-                <a class="btn-danger" href="">Delete Admin</a>
-            </td>
-        </tr>
-        <tr>
-            <td>2. </td>
-            <td>SUH JUNIOR</td>
-            <td>SJ</td>
-            <td>
-            <a class="btn-secondary" href="">Update Admin</a> 
-            <a class="btn-danger" href="">Delete Admin</a>
-            </td>
-        </tr>
-        <tr>
-            <td>3. </td>
-            <td>SUH JUNIOR</td>
-            <td>SJ</td>
-            <td>
-            <a class="btn-secondary" href="">Update Admin</a> 
-            <a class="btn-danger" href="">Delete Admin</a>
-            </td>
-        </tr>
+        <?php 
+        //create sql query to get all the food
+        $sql = "SELECT * FROM tbl_food";
+        //execute the query
+        $result = mysqli_query($conn,$sql);
+        //check if we have food or not
+        $count = mysqli_num_rows($result);
+        $sn = 1;
+        if($count > 0){
+            //we have food in database
+            //getting and displaying the food
+            while($row = mysqli_fetch_assoc($result)){
+                //getting individual values
+                $id = $row['id'];
+                $title = $row['title'];
+                $price  = $row['price'];
+                $image_name = $row['image_name'];
+                $featured = $row['featured'];
+                $active = $row['active'];
+                ?>
+                        <tr>
+                            <td><?php echo $sn++;?></td>
+                            <td><?php echo $title;?></td>
+                            <td><?php echo $price;?>FCFA</td>
+                            <td>
+                                <?php 
+                                // check if we have image or not
+                                if($image_name == ""){
+                                    //we don't have image
+                                    echo "<div class='failed'>Image not Added.</div>";
+                                }else{
+                                    //we have image
+                                    ?>
+                                    <img src="<?php echo SITEURL;?>ADMIN/images/food_images/<?php echo $image_name;?>" alt="food image here" width="50px">
+                                    <?php
+                                }
+                                ?>
+                            </td>
+                            <td><?php echo $featured;?></td>
+                            <td><?php echo $active;?></td>
+                            <td>
+                              <a class="btn-secondary" href="">Update Admin</a> 
+                               <a class="btn-danger" href="">Delete Admin</a>
+                            </td>
+                        </tr>
+                <?php
+            }
+        }else{
+            // food not added in database
+            echo "<tr>
+                    <td colspan='7' class='failed'>Food not added into database.</td>
+                    </tr>";
+        }
+        ?>
+        
+        
     </table>
 </div>
 <div class="clearfix"></div>

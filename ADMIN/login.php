@@ -30,7 +30,7 @@ include('config/constants.php')
             <input type="text" name="username" placeholder="Enter username"><br>
             <br>
             Password:<br>
-            <input type="password" name="password" placeholder="Enter password"><br>
+            <input type="password" name="password" placeholder="Enter password" autocomplete="off"><br>
             <br>
             <input type="submit" name="submit" value="Login" class="btn-primary">
             <br>
