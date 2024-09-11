@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header and Navigation Bar */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 24px;
+    color: white;
+    text-align: left;
+}
+
+.search-bar {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.header-right {
+    display: flex;
+    gap: 20px;
+}
+
+.header-right a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.header-right .cta-button {
+    background-color: #ff6f61;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.header-right a:hover,
+.cta-button:hover {
+    background-color: #ff8a75;
+}
+
+/* Menu Hero Section */
+.menu-hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.menu-hero h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.menu-hero p {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Menu Categories */
+#menu-categories {
+    padding: 40px 20px;
+}
+
+#menu-categories h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.category {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.category h3 {
+    color: #ff6f61;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category ul li {
+    margin: 10px 0;
+}
+
+/* Special Offers Section */
+#special-offers {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.offer img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-right {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+}
