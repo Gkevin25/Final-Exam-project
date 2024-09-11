@@ -12,44 +12,7 @@ body {
     color: var(--text-color);
 }
 
-header {
-    margin-top: 4px;
-    background-color: var(--primary-color);
-    padding: 5%;
-}
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo img {
-    height: 150px;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-}
-
-nav ul li {
-    margin-left: 2rem;
-}
-
-nav ul li a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.cta-button {
-    background-color: var(--secondary-color);
-    color: var(--white);
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-}
 
 .hero {
     background-color: var(--secondary-color);
