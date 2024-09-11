@@ -68,15 +68,35 @@
                         <img src="pics/Ruby-Jewel-Slaw-scaled.jpg" alt="Featured Item 10"width="300" height="450">
                              </select>
                     <form id="payment-form">
-    <label for="card-number">Card Number:</label>
-    <input type="text" id="card-number" name="card-number">
-
-    <label for="expiration-date">Expiration Date:</label>
-    <input type="text" id="expiration-date" name="expiration-date">
-
-    <label for="cvv">CVV:</label>
-    <input type="text" id="cvv" name="cvv">
-
+                         </section>
+      <section id="cart-summary"> 
+      <h2>Cart Summary</h2> 
+      <ul id="cart-items"> <!-- Cart items will be displayed here --> 
+      </ul> 
+      <p>Subtotal: $<span id="subtotal"></span></p> 
+      <p>Tax (10%): $<span id="tax"></span></p> 
+      <p>Total: $<span id="total"></span></p> 
+     </section> <!-- Payment Options Section --> 
+     <section id="payment-options"> 
+      <h2>Payment Options</h2> 
+      <ul> 
+       <li> <input type="radio" id="credit-card" name="payment-option"> Credit Card 
+        <div id="credit-card-info" style="display: none;"> <label for="card-number">Card Number:</label> 
+         <input type="text" id="card-number" name="card-number"> <label for="expiration-date">Expiration Date:</label> 
+         <input type="text" id="expiration-date" name="expiration-date"> <label for="cvv">CVV:</label> 
+         <input type="text" id="cvv" name="cvv"> 
+        </div> </li> 
+       <li> <input type="radio" id="paypal" name="payment-option"> PayPal </li> <!-- Add more payment options here --> 
+      </ul> 
+     </section> <!-- Order Submission Section --> 
+     <section id="order-submission"> <button id="submit-order">Place Order</button> 
+     </section> 
+    </div> 
+   </form> 
+   <div class="form-group"> <label for="special-instructions">Special Instructions:</label> <textarea id="special-instructions" name="special-instructions"></textarea> 
+   </div> <button type="submit" class="cta-button">Place Order</button> 
+  </section> 
+    
     <button type="submit">Pay Now</button>
 </form>
     <meta charset="UTF-8">
