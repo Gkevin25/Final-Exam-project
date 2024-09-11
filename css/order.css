@@ -159,5 +159,17 @@ button.cta-button {
 @media (max-width: 768px) {
     #order-form {
         padding: 1.5rem;
+        
+    }@media (max-width: 768px) {
+    main > * {
+        flex-basis: 40%;
     }
+}
+
+@media (max-width: 480px) {
+    main > * {
+        flex-basis: 100%;
+    }
+}
+    
 }
