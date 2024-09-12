@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Tasty Treasure</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script> <!-- Link to JavaScript file -->
+</head>
+<body>
+    <!-- Header Section (with search bar) -->
+    <header>
+        <div class="nav">
+            <h2 class="logo-text">Tasty Treasure</h2>
+            <div class="search">
+                <!-- Search bar now has an id for JavaScript targeting -->
+                <input id="searchBar" class="search-bar" type="text" placeholder="Search here...">
+            </div>
+            <div class="header-right"> 
+                <a href="index.html">Home</a>
+                <a class="active" href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="order.html" class="cta-button">Order Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="menu-hero">
+            <h1>Our Treasure Trove of Flavors</h1>
+            <p>Discover our finger lickin' good menu items!</p>
+        </section>
+
+        <!-- Menu Categories -->
+        <section id="menu-categories">
+            <h2>Menu Categories</h2>
+            <div class="category-grid" id="foodMenu">
+                <!-- Each item now has a class 'food-item' for filtering -->
+                <div class="category food-item" data-name="Golden Bucket">
+                    <h3>Bucket Meals</h3>
+                    <ul>
+                        <li>Golden Bucket (8 pcs) - 3,000F</li>
+                        <img src="pics/4.jpg" alt="Golden Bucket" width="300" height="450">
+                        <li>Family Treasure Chest (12 pcs) - 4,500F</li>
+                        <img src="pics/5.jpg" alt="Family Treasure Chest" width="300" height="450">
+                        <li>Diamond Duo Bucket (16 pcs) - 6,000F</li>
+                        <img src="pics/6.jpg" alt="Diamond Duo Bucket" width="300" height="450">
+                    </ul>
+                </div>
+
+                <div class="category food-item" data-name="Classic Treasure Sandwich">
+                    <h3>Sandwiches</h3>
+                    <ul>
+                        <li>Classic Treasure Sandwich - 2,500F</li>
+                        <img src="pics/3.jpg" alt="Classic Treasure Sandwich" width="300" height="450">
+                        <li>Spicy Diamond Deluxe - 3,000F</li>
+                        <img src="pics/Spicy-chicken-sandwich.jpg" alt="Spicy Diamond Deluxe" width="300" height="450">
+                        <li>Veggie Gem Burger - 3,500F</li>
+                        <img src="pics/hamburger.jpg" alt="Veggie Gem Burger" width="300" height="450">
+                    </ul>
+                </div>
+
+                <div class="category food-item" data-name="Treasure Fries">
+                    <h3>Sides</h3>
+                    <ul>
+                        <li>Treasure Fries - 2,000F</li>
+                        <img src="pics/fries1.jpg" alt="Treasure Fries" width="300" height="450">
+                        <li>Golden Corn - 2,000F</li>
+                        <img src="pics/sweet-corn-500x500.jpeg" alt="Golden Corn" width="300" height="450">
+                        <li>Jewel Slaw - 3,000F</li>
+                        <img src="pics/Ruby-Jewel-Slaw-scaled.jpg" alt="Jewel Slaw" width="300" height="450">
+                    </ul>
+                </div>
+
+                <div class="category food-item" data-name="Sparkling Treasure Soda">
+                    <h3>Beverages</h3>
+                    <ul>
+                        <li>Sparkling Treasure (Soda) - 2,000F</li>
+                        <img src="pics/7.jpg" alt="Sparkling Treasure Soda" width="300" height="450">
+                        <li>Golden Lemonade - 1,500F</li>
+                        <img src="pics/lemonade.jpg" alt="Golden Lemonade" width="300" height="450">
+                        <li>Diamond Ice Tea - 1,500F</li>
+                        <img src="pics/8.jpg" alt="Diamond Ice Tea" width="300" height="450">
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offers -->
+        <section id="special-offers">
+            <h2>Special Offers</h2>
+            <div class="offer">
+                <h3>Treasure Hunter's Combo</h3>
+                <h4>1 Golden Bucket (8 pcs), 2 sides, 4 drinks - 10,000F</h4>
+                <img class="GoldenBucket" src="pics/GoldenBucket.jpg" alt="Golden Bucket Combo" width="450" height="300">
+            </div>
+            <a class="cta-button" href="order.html">Order Now</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tasty Treasure. All rights reserved.</p>
+    </footer>
+</body>
+</html>
