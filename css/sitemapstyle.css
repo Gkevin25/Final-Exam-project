@@ -1,109 +1,117 @@
 /* Sitemap Styles */
 
-/* General Styles */
+/* General Styles for the whole website */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f9f9f9;
+    font-family: Arial, sans-serif; /* Sets the default font to Arial or a fallback sans-serif */
+    margin: 0; /* Removes default margin from the body */
+    padding: 0; /* Removes default padding from the body */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    background-color: #f9f9f9; /* Sets a light grey background color for the whole page */
 }
 
-/* Header */
+/* Header Section Styles */
 header {
-    background-color: #333;
-    color: white;
-    padding: 15px 20px;
+    background-color: #333; /* Sets the header background to dark grey */
+    color: white; /* Sets the text color to white */
+    padding: 15px 20px; /* Adds padding inside the header */
 }
 
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Arranges child elements in a row */
+    justify-content: space-between; /* Spaces child elements to the start and end of the row */
+    align-items: center; /* Vertically centers the items within the header */
 }
 
+/* Logo text styling */
 .logo-text {
-    font-size: 24px;
-    color: white;
+    font-size: 24px; /* Sets the font size for the logo text */
+    color: white; /* Sets the logo text color to white */
 }
 
+/* Header right section, which contains navigation links */
 .header-right {
-    display: flex;
-    gap: 20px;
+    display: flex; /* Arranges the links in a row */
+    gap: 20px; /* Adds 20px of space between the links */
 }
 
+/* Styles for the navigation links in the header */
 .header-right a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
+    color: white; /* Sets the link text color to white */
+    text-decoration: none; /* Removes the underline from the links */
+    padding: 10px; /* Adds padding inside the links */
 }
 
+/* Styles for the call-to-action button in the header */
 .header-right .cta-button {
-    background-color: #ff6f61;
-    padding: 10px 20px;
-    border-radius: 5px;
+    background-color: #ff6f61; /* Sets the background color to a soft red */
+    padding: 10px 20px; /* Adds padding inside the button */
+    border-radius: 5px; /* Rounds the corners of the button */
 }
 
+/* Hover effect for the links and the call-to-action button */
 .header-right a:hover,
 .cta-button:hover {
-    background-color: #ff8a75;
+    background-color: #ff8a75; /* Changes the background color when hovered */
 }
 
-/* Sitemap Hero Section */
+/* Sitemap Hero Section Styling */
 .sitemap-hero {
-    background-color: #ff6f61;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
+    background-color: #ff6f61; /* Sets the hero section background to soft red */
+    color: white; /* Sets the text color to white */
+    text-align: center; /* Centers the text in the hero section */
+    padding: 50px 20px; /* Adds padding around the content */
 }
 
 .sitemap-hero h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 36px; /* Sets a large font size for the hero title */
+    margin-bottom: 10px; /* Adds margin below the title */
 }
 
 .sitemap-hero p {
-    font-size: 18px;
+    font-size: 18px; /* Sets a medium font size for the hero subtitle */
 }
 
-/* Sitemap Section */
+/* Sitemap Section Styling */
 .sitemap-section {
-    padding: 40px 20px;
-    text-align: center;
+    padding: 40px 20px; /* Adds padding to the sitemap section */
+    text-align: center; /* Centers the text in the sitemap section */
 }
 
 .sitemap-section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #333;
+    font-size: 28px; /* Sets the font size for the sitemap section title */
+    margin-bottom: 20px; /* Adds margin below the title */
+    color: #333; /* Sets the title color to dark grey */
 }
 
+/* Styles for the list in the sitemap section */
 .sitemap-list {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Removes the bullet points from the list */
+    padding: 0; /* Removes default padding */
 }
 
 .sitemap-list li {
-    margin: 15px 0;
+    margin: 15px 0; /* Adds margin between each list item */
 }
 
+/* Styles for the links in the sitemap list */
 .sitemap-list a {
-    text-decoration: none;
-    font-size: 20px;
-    color: #ff6f61;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.3s ease, color 0.3s ease;
+    text-decoration: none; /* Removes the underline from the links */
+    font-size: 20px; /* Sets the font size for the links */
+    color: #ff6f61; /* Sets the text color to soft red */
+    border-bottom: 2px solid transparent; /* Adds a bottom border that is initially invisible */
+    transition: border-color 0.3s ease, color 0.3s ease; /* Smooth transition effect for color and border */
 }
 
+/* Hover effect for the sitemap links */
 .sitemap-list a:hover {
-    color: #333;
-    border-bottom: 2px solid #ff6f61;
+    color: #333; /* Changes the text color to dark grey when hovered */
+    border-bottom: 2px solid #ff6f61; /* Shows the red bottom border when hovered */
 }
 
-/* Footer */
+/* Footer Section Styling */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+    background-color: #333; /* Sets the footer background to dark grey */
+    color: white; /* Sets the text color to white */
+    text-align: center; /* Centers the text in the footer */
+    padding: 20px 0; /* Adds padding inside the footer */
 }
