@@ -1,100 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Declares the document type as HTML5 -->
     <meta charset="UTF-8">
+    <!-- Sets the character encoding for the document -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu - Tasty Treasure</title>
+    <!-- Ensures the webpage is responsive on mobile devices -->
+    
+    <!-- Favicon for the website -->
+    <link rel="shortcut icon" href="pics/i.png" type="image/png">
+    
+    <!-- Sets the title of the webpage -->
+    <title>Tasty Treasure - It's finger lickin' good</title>
+    
+    <!-- Link to the main CSS stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Link to the responsive CSS stylesheet for adjusting the layout on different screen sizes -->
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+    <!-- Link to the external JavaScript file for responsiveness functionality -->
+    <script type="text/javascript" src="js/responsive.js"></script>
+
+    <!-- Header section starts -->
     <header>
         <div class="nav">
+            <!-- Logo section -->
             <div class="logo">
-                <a href="ww.html"><img class="logoimg" src="i.png" alt="Tasty Treasure Logo" width="70" height="70"></a>
+                <!-- Link to the homepage with an image of the logo -->
+                <a href="index.html"><img src="pics/i.png" alt="Tasty Treasure Logo" width="70" height="70"></a>
+                <!-- Website name displayed next to the logo -->
                 <h2 class="logo">Tasty Treasure</h2>
             </div>
+
+            <!-- Search bar input field -->
             <div class="search">
                 <input class="search-bar" type="text" placeholder="Search here...">
             </div>
+
+            <!-- Navigation links to other important pages -->
             <div class="header-right"> 
-                <a href="ww.html">Home</a>
+                <a href="index.html">Home</a>
                 <a class="active" href="menu.html">Menu</a>
                 <a href="about.html">About</a>
                 <a href="order.html" class="cta-button">Order Now</a>
             </div>
-        </div>
-    </header>
 
+            <!-- Hamburger menu for mobile navigation -->
+            <button class="hamburger" aria-label="Toggle menu">☰</button>
+        </div>
+
+        <!-- Dropdown menu section for smaller screens -->
+        <section id="drop-menu">
+            <ul class="nav-menu">
+                <!-- Navigation links for mobile view -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="order.html">Order Now</a></li>
+            </ul>
+        </section>
+    </header>
+    <!-- Header section ends -->
+
+    <!-- Main content section starts -->
     <main>
+        <!-- Hero section for the menu page -->
         <section class="menu-hero">
             <h1>Our Treasure Trove of Flavors</h1>
+            <!-- Short description about the menu -->
             <p>Discover our finger lickin' good menu items!</p>
         </section>
 
+        <!-- Menu categories section -->
         <section id="menu-categories">
             <h2>Menu Categories</h2>
             <div class="category-grid">
+                <!-- Category: Bucket Meals -->
                 <div class="category">
                     <h3>Bucket Meals</h3>
                     <ul>
+                        <!-- List items with menu details and images -->
                         <li>Golden Bucket (8 pcs) - 3,000F</li>
-                        <img src="pics/4.jpg" alt="Featured Item 1"width="300" height="450">
+                        <img src="pics/4.jpg" alt="Featured Item 1" width="300" height="450">
                         <li>Family Treasure Chest (12 pcs) - 4,500F</li>
-                        <img src="pics/5.jpg" alt="Featured Item 2"width="300" height="450">
+                        <img src="pics/5.jpg" alt="Featured Item 2" width="300" height="450">
                         <li>Diamond Duo Bucket (16 pcs) - 6,000F</li>
-                        <img src="pics/6.jpg" alt="Featured Item 3"width="300" height="450">
+                        <img src="pics/6.jpg" alt="Featured Item 3" width="300" height="450">
                     </ul>
                 </div>
+
+                <!-- Category: Sandwiches -->
                 <div class="category">
                     <h3>Sandwiches</h3>
                     <ul>
                         <li>Classic Treasure Sandwich - 2,500F</li>
-                        <img src="pics/3.jpg" alt="Featured Item 5"width="300" height="450">
+                        <img src="pics/3.jpg" alt="Featured Item 5" width="300" height="450">
                         <li>Spicy Diamond Deluxe - 3,000F</li>
-                        <img src="pics/Spicy-chicken-sandwich.jpg" alt="Featured Item 6"width="300" height="450">
+                        <img src="pics/Spicy-chicken-sandwich.jpg" alt="Featured Item 6" width="300" height="450">
                         <li>Veggie Gem Burger - 3,500F</li>
-                        <img src="pics/hamburger.jpg" alt="Featured Item 7"width="300" height="450">
+                        <img src="pics/hamburger.jpg" alt="Featured Item 7" width="300" height="450">
                     </ul>
                 </div>
+
+                <!-- Category: Sides -->
                 <div class="category">
                     <h3>Sides</h3>
                     <ul>
                         <li>Treasure Fries - 2,000F</li>
-                        <img src="pics/fries1.jpg" alt="Featured Item 8"width="300" height="450">
+                        <img src="pics/fries1.jpg" alt="Featured Item 8" width="300" height="450">
                         <li>Golden Corn - 2,000F</li>
-                        <img src="pics/sweet-corn-500x500.jpeg" alt="Featured Item 9"width="300" height="450">
+                        <img src="pics/sweet-corn-500x500.jpeg" alt="Featured Item 9" width="300" height="450">
                         <li>Jewel Slaw - 3,000F</li>
-                        <img src="pics/Ruby-Jewel-Slaw-scaled.jpg" alt="Featured Item 10"width="300" height="450">
+                        <img src="pics/Ruby-Jewel-Slaw-scaled.jpg" alt="Featured Item 10" width="300" height="450">
                     </ul>
                 </div>
+
+                <!-- Category: Beverages -->
                 <div class="category">
                     <h3>Beverages</h3>
                     <ul>
                         <li>Sparkling Treasure (Soda) - 2,000F</li>
-                        <img src="pics/7.jpg" alt="Featured Item 11"width="300" height="450">
+                        <img src="pics/7.jpg" alt="Featured Item 11" width="300" height="450">
                         <li>Golden Lemonade - 1,500F</li>
-                        <img src="pics/lemonade.jpg" alt="Featured Item 12"width="300" height="450">
+                        <img src="pics/lemonade.jpg" alt="Featured Item 12" width="300" height="450">
                         <li>Diamond Ice Tea - 1,500F</li>
-                        <img src="pics/8.jpg" alt="Featured Item 13"width="300" height="450">
+                        <img src="pics/8.jpg" alt="Featured Item 13" width="300" height="450">
                     </ul>
                 </div>
             </div>
         </section>
 
+        <!-- Special offers section -->
         <section id="special-offers">
             <h2>Special Offers</h2>
             <div class="offer">
+                <!-- Featured special offer -->
                 <h3>Treasure Hunter's Combo</h3>
                 <h4>1 Golden Bucket (8 pcs), 2 sides, 4 drinks - 10,000F</h4>
-                <img class="GoldenBucket" src="pics/GoldenBucket.jpg" alt="Featured Item 14" width="450" height="300" >
-
+                <!-- Image of the special offer -->
+                <img class="GoldenBucket" src="pics/2.jpg" alt="Featured Item 14" width="450" height="300">
             </div>
-            <a class="cta-button" href="order.html" >Order Now</a>
+            <!-- Call to action button to place an order -->
+            <a class="cta-button" href="order.html">Order Now</a>
         </section>
     </main>
+    <!-- Main content section ends -->
 
+    <!-- Footer section starts -->
     <footer>
+        <!-- Copyright information -->
         <p>&copy; 2024 Tasty Treasure. All rights reserved.</p>
+        <!-- Link to the sitemap page -->
+        <p><a href="sitemap.html">Sitemap</a></p>
     </footer>
+    <!-- Footer section ends -->
 </body>
 </html>

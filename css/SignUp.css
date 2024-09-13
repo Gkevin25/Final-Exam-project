@@ -15,6 +15,7 @@
 	margin: 0;
 }
 
+
 /* Container styles */
 .container{
 	background: url('../pics/hamburger.jpg');
@@ -44,11 +45,14 @@
     box-shadow: 3px 4px 10px var(--primary-color); 
       
 }
+
 /*styles for the container of the language link*/
 .link-box{
     margin-right: 5px ;
     margin-left: auto;
 }
+
+
 /*styles of "WELCOME"*/
 .welcome{
 	padding-top: 1px;
@@ -94,7 +98,11 @@ button {
     border-radius: 10px; 
     cursor: pointer; 
     transition: all 0.3s ease; 
+	border: 3px solid var(--secondary-color);
+	border-radius: 6px;
+	outline: none;
 }
+
 /*style for paragraphs*/
 P{
 	text-align: center;
@@ -138,6 +146,10 @@ P{
 .signup-box .signup-footer{
 	
 	text-align: center;
+	font-family: 'Roboto' sans-serif;
+	color: var(--primary-color);
+	font-size: 17px;
+	margin-top:-8px ;
 }
 /* Button hover styles */
 button:hover {
@@ -254,7 +266,6 @@ small {
     }
 
 }
-
 
 
 

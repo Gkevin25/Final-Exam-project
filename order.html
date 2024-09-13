@@ -3,27 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Place Your Order - Tasty Treasure</title>
-    <link rel="stylesheet" href="order.css">
+    <link rel="shortcut icon" href="pics/i.png" type="image/png">
+    <title>Tasty Treasure - It's finger lickin' good</title>
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+    <!--js link-->
+    <script type="text/javascript" src="js/responsive.js"></script>
+    <script type="text/javascript" src="js/Order.js"></script>
     <header>
-        <nav>
+        <div class="nav">
             <div class="logo">
-                <a href="index.html"><img src="i.png" alt="Tasty Treasure Logo"></a>
+                <a href="index.html"><img src="pics/i.png" alt="Tasty Treasure Logo" width="70" height="70"></a>
+                <h2 class="logo">Tasty Treasure</h2>
             </div>
-            <ul>
+            <div class="search">
+                <input class="search-bar" type="text" placeholder="Search here...">
+            </div>
+            <div class="header-right"> 
+               <a  href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a  class="active" href="order.html" class="cta-button">Order Now</a>
+
+            </div>
+            <button class="hamburger" aria-label="Toggle menu">☰</button>
+           
+           
+        </div>
+        
+        <section id="drop-menu">
+            <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#" class="active">Order</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="order.html" >Order Now</a></li>
             </ul>
-        </nav>
+
+        </section>
+        
+
     </header>
-    main>
+    <main>
         <section class="order-hero">
-                 <h1>Place Your Order</h1>
+            <p> Proceed</p>
+            <h1>Place Your Order</h1>
             <p>Indulge in our finger lickin' good treasures.</p>
         </section>
       <section id="order-form">
@@ -58,6 +85,21 @@
                         <option value="golden-corn">Golden Corn</option>
                         <option value="jewel-slaw">Jewel Slaw</option>
                              </select>
+                    <form id="payment-form">
+    <label for="card-number">Card Number:</label>
+    <input type="text" id="card-number" name="card-number">
+
+    <label for="expiration-date">Expiration Date:</label>
+    <input type="text" id="expiration-date" name="expiration-date">
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv">
+
+    <button type="submit">Pay Now</button>
+</form>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
                 </div>
                 <div class="form-group">
                     <label for="special-instructions">Special Instructions:</label>
@@ -70,6 +112,9 @@
 
     <footer>
         <p>&copy; 2024 Tasty Treasure. All rights reserved.</p>
-            </footer>
+        <p><a href="sitemap.html">Sitemap</a></p>
+        <!-- Link to switch to French version -->
+        <a href="order_fr.html">French</a>
+    </footer>
 </body>
 </html>

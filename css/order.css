@@ -12,51 +12,14 @@ body {
     color: var(--text-color);
 }
 
-header {
-    margin-top:4 ;
 
-    background-color: var(--primary-color);
-    padding: 5%;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo img {
-    height: 150px;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-}
-
-nav ul li {
-    margin-left: 2rem;
-}
-
-nav ul li a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.cta-button {
-    background-color: var(--secondary-color);
-    color: var(--white);
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-}
 
 .hero {
     background-color: var(--secondary-color);
     color: var(--white);
     text-align: center;
     padding: 4rem 2rem;
+    
 }
 
 .hero h1 {
@@ -67,6 +30,7 @@ nav ul li a {
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+    
 }
 
 #featured-items, #promo {
@@ -159,5 +123,17 @@ button.cta-button {
 @media (max-width: 768px) {
     #order-form {
         padding: 1.5rem;
+        
+    }@media (max-width: 768px) {
+    main > * {
+        flex-basis: 40%;
     }
+}
+
+@media (max-width: 480px) {
+    main > * {
+        flex-basis: 100%;
+    }
+}
+    
 }
