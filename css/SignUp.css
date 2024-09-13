@@ -1,120 +1,260 @@
+:root{
+	--primary-color: #8B4513;  
+    --secondary-color: #FFDD00 ; 
+	--text-color: #000;
+}
+/* General styles applied to all elements */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+/*styles for the body*/
 .sbody{
-
-	font-family: 'Roboto', sans-serif;
-	background-image:url('./pics/fries1.jpg') ;
-	background-size: 100% auto;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment:fixed;
-	min-height: 100vh ;
+	font-size: 14px;
 	margin: 0;
-	padding: 0;
 }
-.lbody{
-	font-family: 'Roboto', sans-serif;
-	background-image:url('./pics/hamburger.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	min-height: 100vh ;
-	margin: 0;
-	padding: 0;
 
+/* Container styles */
+.container{
+	background: url('../pics/hamburger.jpg');
+	background-position: center; 
+    background-size: cover; 
+    height: 100vh;
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr); 
+    margin: auto; 
+	color: var(--text-color);
 }
-img{
-    position: absolute;
-    top: 20px;
-    left: 20px;
+
+/* signup-box styles */
+.signup-box {
+    background: var(--primary-color);
+	background-color:  rgba(139,69,19,0.9);/*sets background image of login box */
+    max-width: 1000px; 
+    grid-column: 1 / span 4; 
+    padding: 10%; 
+    margin: 5%; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    gap: 3px;
+    backdrop-filter: blur(10%);
+    box-shadow: 3px 4px 10px var(--primary-color); 
+      
 }
-.signup-box{
-	width: 400px;
-	height: 720px;
-	margin-left: 0px;
-	background-color: #8B4513;
-	border-radius: 3px;
-	box-shadow: 22px 22px 44px #8B4513
+/*styles for the container of the language link*/
+.link-box{
+    margin-right: 5px ;
+    margin-left: auto;
 }
-.login-box{
-	width: 390px;
-	height: 730px;
-	margin-left: 0px;
-	border-radius: 3px;
-	background-color: #8B4513;
-	background-attachment: fixed;
-	box-shadow: 22px 22px 44px #8B4513;
-}
+/*styles of "WELCOME"*/
 .welcome{
-	padding-top: 25px;
-	text-align: center;
-	padding-left: 15px; 
-	color: white;
-
+	padding-top: 1px;
+	text-align: left;
+	padding-left: 0px;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-.tt{
-	text-align: center;
+/*syles of "Sign in with  your email address"*/
+.em-signup{
+	text-align: left;
+    padding-left:0px;
+    font-family:'Times New Roman', Times, serif;
+    padding-top: 1px;
 }
-.login{
-	padding-top: 160px;
-	text-align: center;
-	padding-left: 15px;
-}
-.signup{
-	padding-left: 15px;
-	padding-top: 10px;
-	color: white;
-}
-
-form{
-    width: 300px;
-	margin-left: 20px;
-}
+/*styles for label elements in the form*/
 form label{
 	display: inline-flex;
-	margin-top: 16px;
-	font-size: 17px;
+	margin-top: 10px;
+	font-size: 13px;
 	font-family: 'Roboto' sans-serif;
 	color: white;
 }
+/*styles for input elements in the form*/
 form input{
 	width: 100%;
-	padding: 6px;
+	padding: 4px;
 	border: none;
-	border: 3px solid #FFDD00;
+	border: 3px solid  #FFDD00;
 	border-radius: 6px;
 	outline: none;
 }
-input[type="button"]{
-	width: 320px;
-	height: 40px;
-	margin-top: 25px;
-	border: none;
-	background-color: #FFDD00;
-	color: #8B4513;
-	font-size: 19px;
-	cursor: pointer;
+/* Styles for button elements */
+button {
+    display: block; 
+    width: 100%;
+    padding: 10px 8px; 
+    margin: 10px 0; 
+    border: none; 
+    color: var(--primary-color);
+    font-size: 15px; 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--secondary-color);
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
 }
+/*style for paragraphs*/
 P{
 	text-align: center;
 	padding-top: 17px;
 }
-.para-2{
+/*styles for the signup header*/
+.signup-box .signup-header{
+	margin-left: 10px;
+	text-align: left;
+	margin-right:auto
+	
+}
+/* Styles for the signup body */
+.signup-box .signup-body {
+    width: 100%; 
+    flex: 1; 
+    align-content: center; 
+}
+/* Form styles inside the signup body */
+.signup-box .signup-body form {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+/* Label styles inside the signup body */
+.signup-box .signup-body label {
+    display: block; 
+    margin: 2px 4px; 
+}
+/* Input field styles inside the signup body */
+.signup-box .signup-body input {
+    width: 100%; 
+}
+/* Link styles inside the signup body */
+.signup-box .signup-body a {
+    display: block; 
+    margin: 8px 0; 
+    text-align: center; 
+}
+/*style for the signup footer*/
+.signup-box .signup-footer{
+	
 	text-align: center;
-	font-family: 'Roboto' sans-serif;
-	color: #8B413;
-	font-size: 17px;
-	margin-top:-8px ;
 }
-.para-2 a{ 
-	color:  red;
+/* Button hover styles */
+button:hover {
+    background-color: rgb(180, 126, 10);
 }
-.para-3 a{
-	color:  red;
+
+/* Hover effects for both input and button elements */
+input:hover, button:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
 }
-.para-4 a{
-	color: red ;
+/*styles for link elements  */
+a {
+    color: wheat; 
+    text-decoration: solid; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
 }
+/* Anchor (link) hover styles */
+a:hover {
+    color: var(--secondary-color); 
+    text-decoration: underline wavy; 
+}
+/*style for the label element*/
+label{
+	font-weight: bold;
+}
+/*Styles for small elements*/
+small {
+    font-size: 14px;
+    font-weight: bold;
+	text-align: center;
+}
+/*MEDIA QUERIES */
+/* (For devices with a maximum width of 1240px) */
+@media screen and (max-width: 1240px) {
+    .signup-box {
+      
+        margin: auto 5%;
+        padding: 5%;
+    }
+    .form{
+        display: flex;
+    }
+
+    .signup-body {
+        flex: auto;
+    }
+}
+
+/* (For devices with a maximum width of 1015px)*/
+@media screen and (max-width: 1015px) {
+    .signup-box {
+       
+        margin: auto 5%;
+        padding: 5%;
+    }
+    .form{
+        display: flex;
+    }
+
+    .signup-body {
+        flex: auto;
+    }
+    small{
+        font-size: 10px;
+    }
+    .signup{
+        font-size: 13px;
+    }
+    
+} 
+
+/* (For devices with a maximum width of 975px) */
+@media screen and (max-width: 975px) {
+    .signup-box {
+       
+        margin: auto 5%;
+        padding: 5%;
+    }
+    .form{
+        display: flex;
+    }
+
+    .signup-body {
+        flex: auto;
+    }
+    .welcome{
+        font-size: smaller ;
+    }
+    .signup{
+        font-size: smaller;
+    }
+}
+
+/* (For devices with a maximum width of 737px) */
+@media screen and (max-width: 737px) {
+    .welcome{
+        font-size: 9px ;
+    }
+    .signup{
+        font-size: 8px;
+    }
+    small{
+        font-size: 6px;
+    }
+    .para-4{
+        font-size: smaller;
+    }
+    form label{
+        font-size: smaller;
+    }
+    button{
+        font-size: smaller;
+    }
+
+}
+
+
+
+
