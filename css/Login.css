@@ -1,0 +1,249 @@
+/* Declaration of CSS variables*/
+:root{
+	--primary-color: #8B4513;  
+    --secondary-color: #FFDD00 ; 
+	--text-color: #000;
+}
+/* Container styles */
+.container{
+	background: url('../pics/fries1.jpg');
+	background-position: center; 
+    background-size: cover; 
+    height: 100vh;
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr); 
+    margin: auto; 
+	color: var(--text-color);
+}
+/* General styles applied to all elements */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+/*Body styles*/
+.lbody{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	margin: 0;
+
+}
+/* Login-box styles */
+.login-box {
+    background: var(--primary-color);
+	background-color:  rgba(139,69,19,0.9);/*sets background image of login box */
+    max-width: 1000px; 
+    grid-column: 1 / span 4; 
+    padding: 10%; 
+    margin: 5%; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    gap: 14px;
+    backdrop-filter: blur(10%);
+    box-shadow: 3px 4px 10px var(--primary-color); 
+   
+   
+}
+/*styles for the container of the language link*/
+.link-box{
+    margin-right: 5px ;
+    margin-left: auto;
+}
+/*styles of "MEMBER LOGIN"*/
+.mem-login{
+	padding-top: 16px;
+	text-align: left;
+	padding-left: 5px;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/*syles of "Sign in with  your email address"*/
+.em-add{
+	text-align: left;
+    padding-left: 5px;
+    font-family:'Times New Roman', Times, serif;
+    padding-top: 10px;
+}
+/*styles for the form section*/
+form{
+	margin: 0;
+}
+/*styles for label elements in the form*/
+form label{
+	display: inline-flex;
+	margin-top: 16px;
+	font-size: 17px;
+	font-family: 'Roboto' sans-serif;
+	color: white;
+}
+/*styles for input elements in the form*/
+form input{
+	width: 100%;
+	padding: 6px;
+	border: none;
+	border: 3px solid  #FFDD00;
+	border-radius: 6px;
+	outline: none;
+}
+/* Styles for button elements */
+button {
+    display: block; 
+    width: 100%;
+    padding: 12px 10px; 
+    margin: 12px 0; 
+    border: none; 
+    color: var(--primary-color);
+    font-size: 17px; 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--secondary-color);
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+}
+/*style for paragraphs*/
+P{
+	text-align: center;
+	padding-top: 17px;
+}
+/* Styles for the login body */
+.login-box .login-body {
+    width: 100%; 
+    flex: 1; 
+    align-content: center; 
+}
+/* Form styles inside the login body */
+.login-box .login-body form {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+/* Label styles inside the login body */
+.login-box .login-body label {
+    display: block; 
+    margin: 2px 4px; 
+}
+/* Input field styles inside the login body */
+.login-box .login-body input {
+    width: 100%; 
+}
+/* Link styles inside the login body */
+.login-box .login-body a {
+    display: block; 
+    margin: 8px 0; 
+    text-align: center; 
+}
+/* Button hover styles */
+button:hover {
+    background-color: rgb(180, 126, 10);
+}
+
+/* Hover effects for both input and button elements */
+input:hover, button:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+/*styles for link elements  */
+a {
+    color: wheat;
+    text-decoration:solid;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s ease; 
+}
+
+/* Anchor (link) hover styles */
+a:hover {
+    color: var(--secondary-color); 
+    text-decoration: underline wavy; 
+}
+.para-4{
+    font-weight: bold;
+}
+/*Styles for small and label elements*/
+small, label {
+    font-size: 14px;
+    font-weight: bold;
+}
+/*Media Queries */
+@media screen and (max-width: 1239px) {
+    .login-box {
+      
+        margin: auto 5%;
+        padding: 5%;
+    }
+    .form{
+        display: flex;
+    }
+
+    .login-body {
+        flex: auto;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    .login-box {
+       
+        margin: auto 5%;
+        padding: 5%;
+    }
+    .form{
+        display: flex;
+    }
+
+    .login-body {
+        flex: auto;
+    }
+    small{
+        font-size: 10px;
+    }
+    .em-add{
+        font-size: 13px;
+    }
+    
+}
+
+@media screen and (max-width: 975px) {
+    .login-box {
+       
+        margin: auto 5%;
+        padding: 5%;
+    }
+    .form{
+        display: flex;
+    }
+
+    .login-body {
+        flex: auto;
+    }
+    .mem-login{
+        font-size: smaller ;
+    }
+    .em-add{
+        font-size: smaller;
+    }
+}
+@media screen and (max-width: 737px) {
+    .mem-login{
+        font-size: 9px ;
+    }
+    .em-add{
+        font-size: 8px;
+    }
+    small{
+        font-size: 6px;
+    }
+    .para-4{
+        font-size: smaller;
+    }
+    form label{
+        font-size: smaller;
+    }
+    button{
+        font-size: smaller;
+    }
+
+
+}
+
+
+
