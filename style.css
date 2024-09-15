@@ -394,6 +394,169 @@ h1 {
     background-color: #8B4513; /* Darker green on hover */
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.contact-info, .feedback, .terms-links {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease; /* Smooth transition for resizing */
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.feedback textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    resize: none; /* Prevent resizing */
+}
+
+.feedback button {
+    background-color: #8B4513;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.feedback button:hover {
+    background-color: #8B4513;
+}
+
+.terms-links p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .contact-info, .feedback, .terms-links {
+        padding: 15px; /* Reduce padding within the containers */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust heading size */
+    }
+
+    .feedback button {
+        width: 100%; /* Make button full width */
+        padding: 12px; /* Increase padding for better touch targets */
+    }
+
+    .terms-links p {
+        font-size: 12px; /* Adjust font size for terms links */
+    }
+}
+
+
+/* Index.htmlpage footer*/
+footer {
+    background-color: #8B4513;
+    color: #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #f1f1f1;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+footer li {
+    margin: 0 10px;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    footer ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    footer li {
+        margin: 5px 0; /* Adjust margin for stacked items */
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 10px; /* Further reduce padding for mobile */
+    }
+
+    footer p {
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+
+    footer a {
+        font-size: 14px; /* Adjust link font size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.3em; /* Further adjust heading size for smaller screens */
+    }
+
+    p {
+        font-size: 14px; /* Adjust paragraph font size */
+    }
+
+    .feedback textarea {
+        height: 80px; /* Reduce height of textarea for smaller screens */
+    }
+}
+
+
 .policy-btn {
     background-color: #8B4513;
     color: white;
