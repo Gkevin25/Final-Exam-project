@@ -332,6 +332,14 @@ footer {
     padding: 20px;
 }
 
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 .contact-container {
     max-width: 600px; /* Limit the width of the form */
     margin: 0 auto; /* Center the form on the page */
@@ -363,6 +371,27 @@ h1 {
 .input-box textarea {
     resize: vertical; /* Allow vertical resizing */
     min-height: 100px; /* Minimum height for the textarea */
+}
+
+/* Send Button Styles */
+.send-button {
+    text-align: center; 
+}
+
+.send-button .btn {
+    background-color: #8B4513;
+    color: white; 
+    padding: 12px 20px; /* Padding for the button */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px;
+    cursor: pointer; 
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Button Hover Effect */
+.send-button .btn:hover {
+    background-color: #8B4513; /* Darker green on hover */
 }
 
 .policy-btn {
