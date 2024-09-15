@@ -7,9 +7,12 @@
         <link rel="shortcut icon" href="images/i.png" type="image/png">
         <title>Tasty Treasure - It's finger lickin' good</title>
         <link rel="stylesheet" href="css/style.css">
+         <link rel="stylesheet" href="css/responsive.css">
     </head>
     <body>
-        <header>
+          <!--js link-->
+    <script type="text/javascript" src="js/responsive.js"></script>
+         <header>
             <div class="nav">
                 <div class="logo">
                     <a href="index.html"><img src="pics/i.png" alt="Tasty Treasure Logo" width="70" height="70"></a>
@@ -19,17 +22,28 @@
                     <input class="search-bar" type="text" placeholder="Search here...">
                 </div>
                 <div class="header-right"> 
-                    <a  class="active"  href="index.html">Home</a>
+                   <a  class="active"  href="index.html">Home</a>
                     <a href="menu.html">Menu</a>
                     <a href="about.html">About</a>
                     <a href="order.html" class="cta-button">Order Now</a>
+    
                 </div>
-                <div class="hamburger-menu" onclick="toggleMenu()">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
+                <button class="hamburger" aria-label="Toggle menu">☰</button>
+               
+               
             </div>
+            
+            <section id="drop-menu">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="order.html" >Order Now</a></li>
+                </ul>
+    
+            </section>
+            
+    
         </header>
         <main>
             <div class="container">
