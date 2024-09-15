@@ -109,22 +109,15 @@
             </div>
             <div class="feedback">
                 <h2>Your Feedback Matters</h2>
-                <textarea placeholder="Leave your feedback here..."></textarea>
+                 <form action="https://api.web3forms.com/submit" method="POST">
+                      <p>We would love to hear from you! Please fill out the form below.</p>
+                    <input type="hidden" name="access_key" value="6c214136-9930-46ae-839a-31ab5c89838d">
+                <textarea name="feedback" placeholder="Leave your feedback here..."></textarea>
                 <button type="submit">Submit Feedback</button>
             </div>
             <div class="terms-links">
                 <p>By contacting us, you agree to our <a href="Terms.html" target="_blank">Privacy Policy</a> and <a href="Terms.html" target="_blank">Terms and Conditions</a>.</p>
             </div>
-            <script>
-            function validateForm() {
-                const termsCheckbox = document.getElementById('termsCheckbox');
-            }
-            if (!termsCheckbox.checked) {
-                alert('You must accept the terms and conditions before sending your message.');
-                return false;
-            }
-            return true;
-            </script>
             
             <footer>
                 <p>&copy; 2024 Tasty Treasure Restaurant, Yaounde, Cameroon. All rights reserved.</p>
@@ -132,8 +125,14 @@
                 <p>Email: info@tastytreasure.com</p>
                 <p>Address: ICT University, Yaounde, Cameroon</p>
                 <ul>
-                    <li><a href="faqs.html">FAQs</a></li> 
-                    <li><a href="index.html">BACK TO TOP</a></li>
+                    <li>
+                        <a href="faqs.html">FAQs</a>
+                    </li> 
+                </ul>
+                <ul>
+                    <li>
+                         <li><a href="index.html">BACK TO TOP</a></li>
+                    </li>
                 </ul>
                 <a href="index_fr.html">French</a>
             </footer>
