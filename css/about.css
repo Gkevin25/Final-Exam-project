@@ -199,3 +199,18 @@ h2 {
 .active_carousel {
   background-color: #717171;
 }
+#opening-hours {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#opening-hours table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#opening-hours th, #opening-hours td {
+    padding: 10px 20px;
+    border: 1px solid var(--primary-color);
+}
+
