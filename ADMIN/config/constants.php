@@ -14,3 +14,4 @@ define('DB_NAME','tasty-treasure');
 $conn = mysqli_connect(LOCALHOST,DB_USERNAME,DB_PASSWORD) or die(mysqli_error()); // database connection
 $db = mysqli_select_db($conn,DB_NAME) or die(mysqli_error());
 ?>
+<link rel="shortcut icon" href="images/i.png" type="image/png">
