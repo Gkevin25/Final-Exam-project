@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="pics/i.png" type="image/png">
+    <title>Tasty Treasure - It's finger lickin' good</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <!--js link-->
+    <script type="text/javascript" src="js/responsive.js"></script>
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <a href="index.html"><img src="pics/i.png" alt="Tasty Treasure Logo" width="70" height="70"></a>
+                <h2 class="logo">Tasty Treasure</h2>
+            </div>
+            
+            <div class="header-right"> 
+                <a    href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a class="active" href="about.html">About</a>
+                <a href="order.html" class="cta-button">Order Now</a>
+            </div>
+            <button class="hamburger" aria-label="Toggle menu">☰</button>
+        </div>
+        <section id="drop-menu">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="order.html" >Order Now</a></li>
+            </ul>
+        
+        </section>
+        <!-- Slideshow section -->
+         <div class="slideshow-container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="pics/slide1.jpg" alt="Slide 1" style="width:100%">
+                <div class="text">COLLABORATORS</div>
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="pics/slide2.jpg" alt="Slide 2" style="width:100%">
+                <div class="text">THE WORKING PROCESS</div>
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="pics/slide3.jpg" alt="Slide 3" style="width:100%">
+                <div class="text">THE WORKING PROCESS</div>
+            </div>
+        </div>
+        
+        <!-- Add dots/circles -->
+         <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+    
+    </header>
+</body>
+    
+    <main>
+        <section class="about-hero">
+            <h1>Our Tasty Target</h1>
+            <p>Discover the mission behind our finger lickin' good treasures!</p>
+        </section>
+        
+        <section id="our-story">
+            <h2>The Tasty Treasure</h2>
+            <div class="story-content">
+                <p>Welcome to Tasty Treasure, where our signature crispy chicken and unique flavor combinations are served directly at your door. Located in the heart of ICT UNIVERSITY, we are passionate about delivering an unforgettable dining experience to every guest.</p>
+                <p>Founded in 2024, Tasty Treasure started as a small food stall in the heart of the ICT UNIVERSITY. Our love for crispy chicken and unique flavors quickly gained a loyal following, leading us to open our first full-fledged restaurant. Over the years, we've stayed true to our roots while continuously innovating to meet the evolving tastes of our customers.</p>
+            </div>
+        </section>
+        
+        <section id="our-values">
+            <h2>Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-item">
+                    <h3>Quality</h3>
+                    <p>We never compromise on the quality of our ingredients or our cooking process.</p>
+                </div>
+                <div class="value-item">
+                    <h3>Community</h3>
+                    <p>We believe in giving back to the communities that have supported us.</p>
+                </div>
+                <div class="value-item">
+                    <h3>Innovation</h3>
+                    <p>We're always exploring new flavors and combinations to put a smile on  our customers when ever they come back to us.</p>
+                </div>
+                <div class="value-item">
+                    <h3>Sustainability</h3>
+                    <p>We're committed to reducing our environmental impact in all aspects of our business.</p>
+                </div>
+            </div>
+        </section> 
+        <section id="call-to-action">
+            <h2>Ready to Taste the Treasure?</h2>
+            <p class="p1">Whether you're dining in or ordering for delivery, we're ready to serve you with the best flavors in town.</p>
+            <a href="order.html" class="cta-button">Order Now</a>
+        </section>
+        <!-- Openning Hours-->
+         <section id="opening-hours">
+            <h2>Opening Hours</h2>
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>11:00 AM - 10:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>11:00 AM - 10:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>11:00 AM - 10:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>11:00 AM - 10:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>11:00 AM - 11:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>12:00 PM - 11:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>12:00 PM - 9:00 PM</td>
+                </tr>
+            </table>
+        </section>
+        
+        <section id="policy-terms">
+            <h2>Learn More</h2>
+            <button class="btn" onclick="showModal('privacyModal')">Privacy Policy</button>
+            <button class="btn" onclick="showModal('termsModal')">Terms and Conditions</button>
+        </section>
+        
+        <!-- Privacy Policy Modal -->
+         <div id="privacyModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="hideModal('privacyModal')">&times;</span>
+                <h3>Privacy Policy</h3>
+                <p>Your privacy is important to us. This Privacy Policy outlines how Tasty Treasure collects, uses, and protects your information when you visit our website or interact with our services.</p>
+                <h4>Information We Collect</h4>
+                <p>We may collect the following types of information: Personal Information, Usage Data.</p>
+                <h4>How We Use Your Information</h4>
+                <p>We use the information we collect for various purposes, including to provide and maintain our services.</p>
+                <h4>Data Security</h4>
+                <p>We take the security of your personal information seriously and implement reasonable security measures to protect it.</p>
+                <h4>Changes to This Privacy Policy</h4>
+                <p>We may update our Privacy Policy from time to time.</p>
+                <h4>Contact Us</h4>
+                <p>If you have any questions about this Privacy Policy, please contact us at support@tastytreasure.com.</p>
+            </div>
+        </div>
+        <!-- Terms and Conditions Modal -->
+         <div id="termsModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="hideModal('termsModal')">&times;</span>
+                <h3>Terms and Conditions</h3>
+                <p>Welcome to Tasty Treasure. By using our website, you agree to comply with and be bound by the following terms and conditions.</p>
+                <h4>1. Acceptance of Terms</h4>
+                <p>By accessing or using our website, you agree to these Terms and Conditions.</p>
+                <h4>2. Changes to Terms</h4>
+                <p>We reserve the right to modify these terms at any time.</p>
+                <h4>3. User Responsibilities</h4>
+                <p>You agree to use our website only for lawful purposes.</p>
+                <h4>4. Intellectual Property</h4>
+                <p>All content on this website is the property of Tasty Treasure.</p>
+                <h4>5. Limitation of Liability</h4>
+                <p>Tasty Treasure shall not be liable for any indirect damages.</p>
+                <h4>6. Governing Law</h4>
+                <p>These Terms and Conditions shall be governed by the laws of [Your State/Country].</p>
+                <h4>7. Contact Us</h4>
+                <p>If you have any questions about these Terms and Conditions, please contact us at support@tastytreasure.com.</p>
+            </div>
+        </div>
+    </main>
+    <script>
+    function showModal(modalId) {
+        document.getElementById(modalId).style.display = "block";
+    }
+    function hideModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+    }
+    // Close the modal when clicking outside of it
+    window.onclick = function(event) {
+        if (event.target.classList.contains('modal')) {
+            hideModal('privacyModal');
+            hideModal('termsModal');
+        }
+    }
+    </script>
+     <!-- Slideshow script -->
+      <script>
+      var slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        // hide all slides
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        // reset the index if it exceeds the number of slides
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        // Remove the "active" class from all dots
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active_carousel", "");
+        }
+        // display the current slide and mark the coressponding dot as active
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active_carousel";
+        setTimeout(showSlides, 3500); // Change image every 3.5 seconds
+        }
+        </script>
+        
+        <!-- Help Section in Footer -->
+        <footer>
+            <div class="footer-help-section">
+                <h2>Help & Support</h2>
+                <p>If you have any questions or need assistance, please check the following resources:</p>
+                <ul>
+                    <li><a href="faqs.html">FAQs</a></li> 
+                    <p>
+                        <a href="/">BACK TO HOME</a>
+                    </p>
+                </ul>
+                <p>If you still need help, feel free to reach out to our support team:</p>
+                <p><strong>Email:</strong> <a href="mailto:support@yourrestaurant.com">support@yourrestaurant.com</a></p>
+                <p><strong>Phone:</strong> (+237) 677-588-867</p>
+            </div>
+            <p>&copy; 2024 Tasty Treasure. All rights reserved.</p>
+            <p><a href="sitemap.html">Sitemap</a></p>
+        </footer>
+    </body>
+    
+    </html>
+
