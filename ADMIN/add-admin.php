@@ -14,15 +14,15 @@
             <table class="table-30">
                 <tr>
                     <td>Full name :</td>
-                    <td><input type="text" name="full_name" placeholder="Enter your name"></td>
+                    <td><input type="text" name="full_name" placeholder="Enter your name" pattern='[A-Za-z\s]{4,100}' required></td>
                 </tr>
                 <tr>
                     <td>User name :</td>
-                    <td><input type="text" name="username" placeholder="Enter user name"></td>
+                    <td><input type="text" name="username" placeholder="Enter user name" pattern='[A-Za-z\s]{4,100}' required></td>
                 </tr>
                 <tr>
                     <td>Password :</td>
-                    <td><input type="password" name="password" placeholder="Enter your password"></td>
+                    <td><input type="password" name="password" placeholder="Enter your password" required></td>
                 </tr>
                 <tr>
                     <td colspan="2">
