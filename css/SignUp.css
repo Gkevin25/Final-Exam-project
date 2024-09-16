@@ -144,7 +144,7 @@ P{
 }
 /*style for the signup footer*/
 .signup-box .signup-footer{
-
+	
 	text-align: center;
 	font-family: 'Roboto' sans-serif;
 	color: var(--primary-color);
@@ -156,7 +156,7 @@ button:hover {
     background-color: rgb(180, 126, 10);
 }
 
-/* Hover effects for both input and button elements   */
+/* Hover effects for both input and button elements */
 input:hover, button:hover {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
 }
@@ -178,7 +178,6 @@ label{
 }
 /*Styles for small elements*/
 small {
-	color: var(--text-color);
     font-size: 14px;
     font-weight: bold;
 	text-align: center;

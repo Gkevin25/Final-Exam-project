@@ -13,6 +13,17 @@ body {
 }
 
 
+
+.success{
+    color: #2ed573;
+    font-weight: bold;
+}
+.failed{
+    color: #ff4757;
+    font-weight: bold;
+}
+
+
 .nav {
     margin: 0px;
     overflow: hidden;
