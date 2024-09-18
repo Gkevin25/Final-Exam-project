@@ -10,6 +10,22 @@
         echo $_SESSION['food-added'];
         unset($_SESSION['food-added']);
      }
+     if(isset($_SESSION['delete'])){
+        echo $_SESSION['delete'];
+        unset($_SESSION['delete']);
+     }
+     if(isset($_SESSION['upload'])){
+        echo $_SESSION['upload'];
+        unset($_SESSION['upload']);
+     }
+     if(isset($_SESSION['unauthorised'])){
+        echo $_SESSION['unauthorised'];
+        unset($_SESSION['unauthorised']);
+     }
+     if(isset($_SESSION['update'])){
+        echo $_SESSION['update'];
+        unset($_SESSION['update']);
+     }
      ?>
      <br>
      <br>
@@ -70,8 +86,8 @@
                             <td><?php echo $featured;?></td>
                             <td><?php echo $active;?></td>
                             <td>
-                              <a class="btn-secondary" href="">Update Admin</a> 
-                               <a class="btn-danger" href="">Delete Admin</a>
+                              <a class="btn-secondary" href="<?php echo SITEURL;?>ADMIN/update-food.php?id=<?php echo $id;?>">Update food</a> 
+                               <a class="btn-danger" href="<?php echo SITEURL;?>ADMIN/delete-food.php?id=<?php echo $id;?>&image_name=<?php echo $image_name;?>">Delete food</a>
                             </td>
                         </tr>
                 <?php

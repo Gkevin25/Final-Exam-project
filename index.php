@@ -1,74 +1,62 @@
-
+<?php include('ADMIN/config/constants.php')?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="pics/i.png" type="image/png">
+        <link rel="shortcut icon" href="images/i.png" type="image/png">
         <title>Tasty Treasure - It's finger lickin' good</title>
         <link rel="stylesheet" href="css/style.css">
-         <link rel="stylesheet" href="css/responsive.css">
     </head>
     <body>
-          <!--js link-->
-    <script type="text/javascript" src="js/responsive.js"></script>
-         <header>
+        <header>
             <div class="nav">
                 <div class="logo">
-                    <a href="index.html"><img src="pics/i.png" alt="Tasty Treasure Logo" width="70" height="70"></a>
+                    <a href="<?php echo SITEURL;?>"><img src="images/i.png" alt="Tasty Treasure Logo" width="70" height="70"></a>
                     <h2 class="logo">Tasty Treasure</h2>
                 </div>
+                <form action="<?php echo SITEURL?>food-search.php" method="POST">
                 <div class="search">
-                    <input class="search-bar" type="text" placeholder="Search here...">
+                    <input class="search-bar" name="search" type="text" placeholder="Search here..." required>
                 </div>
+                </form>
                 <div class="header-right"> 
-                   <a  class="active"  href="index.html">Home</a>
-                    <a href="menu.html">Menu</a>
-                    <a href="about.html">About</a>
-                    <a href="order.html" class="cta-button">Order Now</a>
-    
+                    <a  class="active"  href="<?php echo SITEURL;?>">Home</a>
+                    <a href="<?php echo SITEURL;?>menu.php">Menu</a>
+                    <a href="<?php echo SITEURL;?>about.php">About</a>
+                    <a href="<?php echo SITEURL;?>order.php" class="cta-button">Order Now</a>
                 </div>
-                <button class="hamburger" aria-label="Toggle menu">☰</button>
-               
-               
+                <div class="hamburger-menu" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
             </div>
-            
-            <section id="drop-menu">
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="order.html" >Order Now</a></li>
-                </ul>
-    
-            </section>
-            
-    
         </header>
         <main>
             <div class="container">
-                <img src="pics/back-image.png" alt="backgroung image here" style="width: 100%;">
+                <img src="images/back-image.png" alt="backgroung image here" style="width: 100%;">
                 <div class="content">
                     <h1>Discover Your Tasty Treasure</h1>
                     <p>Indulge in flavors that are finger lickin' good!</p>
-                    <a href="menu.html" class="cta-button">View Menu</a>
+                    <a href="<?php echo SITEURL;?>menu.php" class="cta-button">View Menu</a>
                 </div>
             </div>
             <section id="featured-items">
                 <h2>Featured Treasures</h2>
                 <div class="item-grid">
                     <div class="item">
-                        <img src="pics/2.jpg" alt="Featured Item 1">
+                        <img src="images/2.jpg" alt="Featured Item 1">
                         <h3>Golden Bucket</h3>
                         <p>Our signature crispy delight</p>
                     </div>
                     <div class="item">
-                        <img src="pics/3.jpg" alt="Featured Item 2"width="300" height="450">
+                        <img src="images/3.jpg" alt="Featured Item 2"width="300" height="450">
                         <h3>Diamond Sandwich</h3>
                         <p>A gem of flavors in every bite</p>
                     </div>
                     <div class="item">
-                        <img src="pics/4.jpg" alt="Featured Item 3">
+                        <img src="images/4.jpg" alt="Featured Item 3">
                         <h3>Treasure Fries</h3>
                         <p>Crispy, golden, and irresistible</p>
                     </div>
@@ -78,7 +66,7 @@
             <section id="promo">
                 <h2>Today's Special Offer</h2>
                 <p>Buy one Golden Bucket, get a free Diamond Sandwich!</p>
-                <a href="order.html" class="cta-button">Order Now</a>
+                <a href="<?php echo SITEURL?>menu.php" class="cta-button">Order Now</a>
             </section>
             <!-- Contact Us Section-->
              <div class="contact-container" id="contact">
@@ -109,15 +97,22 @@
             </div>
             <div class="feedback">
                 <h2>Your Feedback Matters</h2>
-                 <form action="https://api.web3forms.com/submit" method="POST">
-                      <p>We would love to hear from you! Please fill out the form below.</p>
-                    <input type="hidden" name="access_key" value="6c214136-9930-46ae-839a-31ab5c89838d">
-                <textarea name="feedback" placeholder="Leave your feedback here..."></textarea>
+                <textarea placeholder="Leave your feedback here..."></textarea>
                 <button type="submit">Submit Feedback</button>
             </div>
             <div class="terms-links">
-                <p>By contacting us, you agree to our <a href="Terms.html" target="_blank">Privacy Policy</a> and <a href="Terms.html" target="_blank">Terms and Conditions</a>.</p>
+                <p>By contacting us, you agree to our <a href="#privacyModal" target="_blank">Privacy Policy</a> and <a href="#termsModal" target="_blank">Terms and Conditions</a>.</p>
             </div>
+            <script>
+            function validateForm() {
+                const termsCheckbox = document.getElementById('termsCheckbox');
+            }
+            if (!termsCheckbox.checked) {
+                alert('You must accept the terms and conditions before sending your message.');
+                return false;
+            }
+            return true;
+            </script>
             
             <footer>
                 <p>&copy; 2024 Tasty Treasure Restaurant, Yaounde, Cameroon. All rights reserved.</p>
@@ -126,10 +121,9 @@
                 <p>Address: ICT University, Yaounde, Cameroon</p>
                 <ul>
                     <li><a href="faqs.html">FAQs</a></li> 
-                    <li><a href="sitemap.html">Sitemap</a></li>
-                    <li><a href="index.html">BACK TO TOP</a></li>
+                    <li><a href="#">BACK TO TOP</a></li>
                 </ul>
-                <a href="index_fr.html">French</a>
+                <a href="index_fr.php">French</a>
             </footer>
         </main>
     </body>

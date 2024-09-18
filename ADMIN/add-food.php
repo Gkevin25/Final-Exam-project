@@ -13,11 +13,11 @@
             <table class="table-30">
                 <tr>
                     <td>Title</td>
-                    <td><input type="text" name="title" placeholder="Enter the name of the food" required></td>
+                    <td><input type="text" name="title" placeholder="Enter the name of the food" pattern='[A-Za-z\s]{4,100}' required></td>
                 </tr>
                 <tr>
                     <td>Description:</td>
-                    <td><textarea name="description" id="" cols="30" rows="5" placeholder="description of the food"></textarea></td>
+                    <td><textarea name="description" id="" cols="30" rows="5" placeholder="description of the food" pattern='[A-Za-z\s]{4,100}' required></textarea></td>
                 </tr>
                 <tr>
                     <td>Price:</td>
